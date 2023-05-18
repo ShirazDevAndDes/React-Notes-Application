@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- Modal Body -->
+    <div
+      class="modal fade"
+      id="todo-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalTitleId"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">Todo Info</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <input type="hidden" name="id" value="" />
+              <div class="mb-3">
+                <label for="" class="form-label">Title</label>
+                <input
+                  type="text"
+                  class="form-control shadow-none"
+                  name=""
+                  id=""
+                  placeholder=""
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Importance</label>
+                <select
+                  class="form-select form-select shadow-none"
+                  name=""
+                  id=""
+                >
+                  <option value="antiquewhite" selected>Normal</option>
+                  <option value="red">Important</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label">Description</label>
+                <textarea
+                  class="form-control shadow-none"
+                  name=""
+                  id=""
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-primary w-100">Create</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-8 mt-5">
+          <div class="card">
+            <div class="card-body">
+              <input
+                type="text"
+                value=""
+                placeholder="Search Todo"
+                class="form-control mb-2 shadow-none"
+                id="search"
+              />
+              <button
+                class="btn btn-primary w-100"
+                data-bs-toggle="modal"
+                data-bs-target="#todo-modal"
+              >
+                Add Todo
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 mt-4" id="todo-list">
+          <div class="container-fluid">
+            <div class="row">
+              <div
+                class="card shadow col-md-6 col-lg-4 mb-3"
+                style="background-color: orangered; color: white"
+              >
+                <div class="card-body">
+                  <h4 class="card-title">Title</h4>
+                  <p class="card-text line-clamp">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Temporibus esse accusamus aperiam similique ipsum, numquam
+                    dolorem natus, omnis fugit dignissimos reiciendis
+                    perferendis corrupti sapiente voluptatibus porro quos beatae
+                    expedita nemo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
